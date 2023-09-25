@@ -11,13 +11,14 @@
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min_index;
-	int min_value, temp, swap = 0;
+	int min_value, temp, swap;
 
 	if (array == NULL)
 		return;
 
 	for (i = 0; i < size; i++)
 	{
+		swap = 0;
 		min_value = array[i];
 		min_index = i;
 		for (j = i; j < size; j++)
